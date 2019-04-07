@@ -7,7 +7,7 @@ $get = file_get_contents("https://api-ssl.bitly.com/v3/shorten?access_token=".$t
 $decode = json_decode($get);
 $short = $decode->data->url;
 //echo $short;
-echo '{"messages": [{"text": "Link:' . $short . '"}]}'; // for chatbot
+echo '{"messages": [{"text": "Link: ' . $short . '"}]}'; // for chatbot
 }
 else
 {
